@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "https://github.com/opfelix",
+  base: "https://github.com/opfelix/Docs",
   title: "Opfelix",
   head: [['link', { rel: 'icon', href: '../../icon/小猫抓.ico' }]],
   description: "Opfelix",
