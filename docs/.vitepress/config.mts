@@ -1,29 +1,48 @@
 import { defineConfig } from 'vitepress'
+import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lastUpdated: true,
   base: "/",
   title: "Opfelix",
   head: [['link', { rel: 'icon', href: '../../icon/小猫抓.ico' }]],
   description: "Opfelix",
+
   themeConfig: {
+    docFooter: {
+      prev: false,
+      next: false
+    },
+    outlineTitle: "目录",
+    outline: [2,6],
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主站', link: 'https://opfelix.com' },
-      { text: '文档站', link: '/' },
+      { text: '主站', link: 'https://opfelix.com' },     
+      {
+        text: 'Linux',
+        items: [
+          { text: '文件系统操作', link: '../Linux/1.文件系统操作.md' },
+          { text: '用户组及权限', link: '../Linux/2.用户组及权限.md' },
+        ]
+      },
       { text: '博客', link: 'https://www.cnblogs.com/opfelix' },
       { text: '关于', link: 'https://opfelix.com/about.html' }
     ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: { 
+      "/Linux/": set_sidebar("/Linux/")
+    },
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' }
+    //     ]
+    //   }
+    // ],
+    // sidebar: false, // 关闭侧边栏
+    // aside: "left", // 设置右侧侧边栏在左侧显示
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/opfelix' }

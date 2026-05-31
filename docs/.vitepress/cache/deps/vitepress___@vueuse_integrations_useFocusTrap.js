@@ -3,13 +3,13 @@ import {
   toArray,
   tryOnScopeDispose,
   unrefElement
-} from "./chunk-UPIQLODK.js";
+} from "./chunk-MVPIGKH4.js";
 import {
   computed,
   shallowRef,
   toValue,
   watch
-} from "./chunk-UHRETBQL.js";
+} from "./chunk-HM2U73AA.js";
 
 // node_modules/tabbable/dist/index.esm.js
 var candidateSelectors = ["input:not([inert]):not([inert] *)", "select:not([inert]):not([inert] *)", "textarea:not([inert]):not([inert] *)", "a[href]:not([inert]):not([inert] *)", "button:not([inert]):not([inert] *)", "[tabindex]:not(slot):not([inert]):not([inert] *)", "audio[controls]:not([inert]):not([inert] *)", "video[controls]:not([inert]):not([inert] *)", '[contenteditable]:not([contenteditable="false"]):not([inert]):not([inert] *)', "details>summary:first-of-type:not([inert]):not([inert] *)", "details:not([inert]):not([inert] *)"];
@@ -370,29 +370,6 @@ function _arrayLikeToArray(r, a) {
 function _arrayWithoutHoles(r) {
   if (Array.isArray(r)) return _arrayLikeToArray(r);
 }
-function asyncGeneratorStep(n, t, e, r, o, a, c) {
-  try {
-    var i = n[a](c), u = i.value;
-  } catch (n2) {
-    return void e(n2);
-  }
-  i.done ? t(u) : Promise.resolve(u).then(r, o);
-}
-function _asyncToGenerator(n) {
-  return function() {
-    var t = this, e = arguments;
-    return new Promise(function(r, o) {
-      var a = n.apply(t, e);
-      function _next(n2) {
-        asyncGeneratorStep(a, r, o, _next, _throw, "next", n2);
-      }
-      function _throw(n2) {
-        asyncGeneratorStep(a, r, o, _next, _throw, "throw", n2);
-      }
-      _next(void 0);
-    });
-  };
-}
 function _createForOfIteratorHelper(r, e) {
   var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
   if (!t) {
@@ -473,101 +450,6 @@ function _objectSpread2(e) {
     });
   }
   return e;
-}
-function _regenerator() {
-  var e, t, r = "function" == typeof Symbol ? Symbol : {}, n = r.iterator || "@@iterator", o = r.toStringTag || "@@toStringTag";
-  function i(r2, n2, o2, i2) {
-    var c2 = n2 && n2.prototype instanceof Generator ? n2 : Generator, u2 = Object.create(c2.prototype);
-    return _regeneratorDefine(u2, "_invoke", (function(r3, n3, o3) {
-      var i3, c3, u3, f2 = 0, p = o3 || [], y = false, G = {
-        p: 0,
-        n: 0,
-        v: e,
-        a: d,
-        f: d.bind(e, 4),
-        d: function(t2, r4) {
-          return i3 = t2, c3 = 0, u3 = e, G.n = r4, a;
-        }
-      };
-      function d(r4, n4) {
-        for (c3 = r4, u3 = n4, t = 0; !y && f2 && !o4 && t < p.length; t++) {
-          var o4, i4 = p[t], d2 = G.p, l = i4[2];
-          r4 > 3 ? (o4 = l === n4) && (u3 = i4[(c3 = i4[4]) ? 5 : (c3 = 3, 3)], i4[4] = i4[5] = e) : i4[0] <= d2 && ((o4 = r4 < 2 && d2 < i4[1]) ? (c3 = 0, G.v = n4, G.n = i4[1]) : d2 < l && (o4 = r4 < 3 || i4[0] > n4 || n4 > l) && (i4[4] = r4, i4[5] = n4, G.n = l, c3 = 0));
-        }
-        if (o4 || r4 > 1) return a;
-        throw y = true, n4;
-      }
-      return function(o4, p2, l) {
-        if (f2 > 1) throw TypeError("Generator is already running");
-        for (y && 1 === p2 && d(p2, l), c3 = p2, u3 = l; (t = c3 < 2 ? e : u3) || !y; ) {
-          i3 || (c3 ? c3 < 3 ? (c3 > 1 && (G.n = -1), d(c3, u3)) : G.n = u3 : G.v = u3);
-          try {
-            if (f2 = 2, i3) {
-              if (c3 || (o4 = "next"), t = i3[o4]) {
-                if (!(t = t.call(i3, u3))) throw TypeError("iterator result is not an object");
-                if (!t.done) return t;
-                u3 = t.value, c3 < 2 && (c3 = 0);
-              } else 1 === c3 && (t = i3.return) && t.call(i3), c3 < 2 && (u3 = TypeError("The iterator does not provide a '" + o4 + "' method"), c3 = 1);
-              i3 = e;
-            } else if ((t = (y = G.n < 0) ? u3 : r3.call(n3, G)) !== a) break;
-          } catch (t2) {
-            i3 = e, c3 = 1, u3 = t2;
-          } finally {
-            f2 = 1;
-          }
-        }
-        return {
-          value: t,
-          done: y
-        };
-      };
-    })(r2, o2, i2), true), u2;
-  }
-  var a = {};
-  function Generator() {
-  }
-  function GeneratorFunction() {
-  }
-  function GeneratorFunctionPrototype() {
-  }
-  t = Object.getPrototypeOf;
-  var c = [][n] ? t(t([][n]())) : (_regeneratorDefine(t = {}, n, function() {
-    return this;
-  }), t), u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c);
-  function f(e2) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(e2, GeneratorFunctionPrototype) : (e2.__proto__ = GeneratorFunctionPrototype, _regeneratorDefine(e2, o, "GeneratorFunction")), e2.prototype = Object.create(u), e2;
-  }
-  return GeneratorFunction.prototype = GeneratorFunctionPrototype, _regeneratorDefine(u, "constructor", GeneratorFunctionPrototype), _regeneratorDefine(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = "GeneratorFunction", _regeneratorDefine(GeneratorFunctionPrototype, o, "GeneratorFunction"), _regeneratorDefine(u), _regeneratorDefine(u, o, "Generator"), _regeneratorDefine(u, n, function() {
-    return this;
-  }), _regeneratorDefine(u, "toString", function() {
-    return "[object Generator]";
-  }), (_regenerator = function() {
-    return {
-      w: i,
-      m: f
-    };
-  })();
-}
-function _regeneratorDefine(e, r, n, t) {
-  var i = Object.defineProperty;
-  try {
-    i({}, "", {});
-  } catch (e2) {
-    i = 0;
-  }
-  _regeneratorDefine = function(e2, r2, n2, t2) {
-    function o(r3, n3) {
-      _regeneratorDefine(e2, r3, function(e3) {
-        return this._invoke(r3, n3, e3);
-      });
-    }
-    r2 ? i ? i(e2, r2, {
-      value: n2,
-      enumerable: !t2,
-      configurable: !t2,
-      writable: !t2
-    }) : e2[r2] = n2 : (o("next", 0), o("throw", 1), o("return", 2));
-  }, _regeneratorDefine(e, r, n, t);
 }
 function _toConsumableArray(r) {
   return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread();
@@ -768,6 +650,16 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
     }
     return node;
   };
+  var _getActiveElement = function getActiveElement(el) {
+    var activeElement = el.activeElement;
+    if (!activeElement) {
+      return null;
+    }
+    if (activeElement.shadowRoot && activeElement.shadowRoot.activeElement !== null) {
+      return _getActiveElement(activeElement.shadowRoot);
+    }
+    return activeElement;
+  };
   var getInitialFocusNode = function getInitialFocusNode2() {
     var node = getNodeForOption("initialFocus", {
       hasFallback: true
@@ -776,8 +668,9 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
       return false;
     }
     if (node === void 0 || node && !isFocusable(node, config.tabbableOptions)) {
-      if (findContainerIndex(doc.activeElement) >= 0) {
-        node = doc.activeElement;
+      var activeElement = _getActiveElement(doc);
+      if (findContainerIndex(activeElement) >= 0) {
+        node = activeElement;
       } else {
         var firstTabbableGroup = state.tabbableGroups[0];
         var firstTabbableNode = firstTabbableGroup && firstTabbableGroup.firstTabbableNode;
@@ -863,16 +756,6 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
     }) && state.containerGroups.length > 1) {
       throw new Error("At least one node with a positive tabindex was found in one of your focus-trap's multiple containers. Positive tabindexes are only supported in single-container focus-traps.");
     }
-  };
-  var _getActiveElement = function getActiveElement(el) {
-    var activeElement = el.activeElement;
-    if (!activeElement) {
-      return;
-    }
-    if (activeElement.shadowRoot && activeElement.shadowRoot.activeElement !== null) {
-      return _getActiveElement(activeElement.shadowRoot);
-    }
-    return activeElement;
   };
   var _tryFocus = function tryFocus(node) {
     if (node === false) {
@@ -1073,7 +956,7 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
   };
   var addListeners = function addListeners2() {
     if (!state.active) {
-      return Promise.resolve();
+      return;
     }
     activeFocusTraps.activateTrap(trapStack, trap);
     var promise;
@@ -1085,7 +968,6 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
         });
       });
     } else {
-      promise = Promise.resolve();
       _tryFocus(getInitialFocusNode());
     }
     doc.addEventListener("focusin", checkFocusIn, true);
@@ -1235,31 +1117,24 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
         onActivate === null || onActivate === void 0 || onActivate({
           trap
         });
-        var finishActivation = (function() {
-          var _ref6 = _asyncToGenerator(_regenerator().m(function _callee() {
-            return _regenerator().w(function(_context) {
-              while (1) switch (_context.n) {
-                case 0:
-                  if (checkCanFocusTrap) {
-                    updateTabbableNodes();
-                  }
-                  _context.n = 1;
-                  return addListeners();
-                case 1:
-                  trap._setSubtreeIsolation(true);
-                  updateObservedNodes();
-                  onPostActivate === null || onPostActivate === void 0 || onPostActivate({
-                    trap
-                  });
-                case 2:
-                  return _context.a(2);
-              }
-            }, _callee);
-          }));
-          return function finishActivation2() {
-            return _ref6.apply(this, arguments);
+        var finishActivation = function finishActivation2() {
+          if (checkCanFocusTrap) {
+            updateTabbableNodes();
+          }
+          var afterListeners = function afterListeners2() {
+            trap._setSubtreeIsolation(true);
+            updateObservedNodes();
+            onPostActivate === null || onPostActivate === void 0 || onPostActivate({
+              trap
+            });
           };
-        })();
+          var listenersPromise = addListeners();
+          if (listenersPromise) {
+            listenersPromise.then(afterListeners);
+          } else {
+            afterListeners();
+          }
+        };
         if (checkCanFocusTrap) {
           checkCanFocusTrap(state.containers.concat()).then(finishActivation, finishActivation);
           return this;
@@ -1389,29 +1264,22 @@ var createFocusTrap = function createFocusTrap2(elements, userOptions) {
           onUnpause === null || onUnpause === void 0 || onUnpause({
             trap
           });
-          var finishUnpause = (function() {
-            var _ref7 = _asyncToGenerator(_regenerator().m(function _callee2() {
-              return _regenerator().w(function(_context2) {
-                while (1) switch (_context2.n) {
-                  case 0:
-                    updateTabbableNodes();
-                    _context2.n = 1;
-                    return addListeners();
-                  case 1:
-                    trap._setSubtreeIsolation(true);
-                    updateObservedNodes();
-                    onPostUnpause === null || onPostUnpause === void 0 || onPostUnpause({
-                      trap
-                    });
-                  case 2:
-                    return _context2.a(2);
-                }
-              }, _callee2);
-            }));
-            return function finishUnpause2() {
-              return _ref7.apply(this, arguments);
+          var finishUnpause = function finishUnpause2() {
+            updateTabbableNodes();
+            var afterListeners = function afterListeners2() {
+              trap._setSubtreeIsolation(true);
+              updateObservedNodes();
+              onPostUnpause === null || onPostUnpause === void 0 || onPostUnpause({
+                trap
+              });
             };
-          })();
+            var listenersPromise = addListeners();
+            if (listenersPromise) {
+              listenersPromise.then(afterListeners);
+            } else {
+              afterListeners();
+            }
+          };
           finishUnpause();
         }
         return this;

@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Linux
-      link: /Linux
+      link: /Linux/0.目录.md
     - theme: alt
       text: Tools
       link: /Tools
