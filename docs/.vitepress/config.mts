@@ -27,7 +27,7 @@ export default defineConfig({
         ]
       },
       { text: '博客', link: 'https://www.cnblogs.com/opfelix' },
-      { text: '关于', link: 'https://opfelix.com/about.html' }
+      // { text: '关于', link: 'https://opfelix.com/about.html' }
     ],
     sidebar: { 
       "/Linux/": set_sidebar("/Linux/")
@@ -39,7 +39,6 @@ export default defineConfig({
     //       { text: 'Markdown Examples', link: '/markdown-examples' },
     //       { text: 'Runtime API Examples', link: '/api-examples' }
     //     ]
-    //   }
     // ],
     // sidebar: false, // 关闭侧边栏
     // aside: "left", // 设置右侧侧边栏在左侧显示
