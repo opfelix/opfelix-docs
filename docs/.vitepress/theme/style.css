@@ -137,7 +137,7 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
-自定义侧边栏在最左边，右边撑满宽度
+/* 自定义侧边栏在最左边，右边撑满宽度 */
 .VPDoc .container {
   margin: 0 !important;
 }
