@@ -137,7 +137,7 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
-/* 自定义侧边栏在最左边，右边撑满宽度
+自定义侧边栏在最左边，右边撑满宽度
 .VPDoc .container {
   margin: 0 !important;
 }
@@ -171,8 +171,8 @@
 }
 
 /* 自定义h2的间距 */
-/* .vp-doc h2 {
+.vp-doc h2 {
   margin: 0px 0 16px;
   padding-top: 24px;
   border: none;
-} */
+}

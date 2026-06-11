@@ -26,22 +26,22 @@ export default defineConfig({
           { text: '用户组及权限', link: '../Linux/2.用户组及权限.md' },
         ]
       },
+      {
+        text: 'CloudNative',
+        items: [
+          { text: 'k8s', link: '../CloudNative/k8s/k8s.md' },
+        ]
+      },
       { text: '博客', link: 'https://www.cnblogs.com/opfelix' },
       // { text: '关于', link: 'https://opfelix.com/about.html' }
     ],
-    sidebar: { 
-      "/Linux/": set_sidebar("/Linux/")
-    },
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    // ],
-    // sidebar: false, // 关闭侧边栏
-    // aside: "left", // 设置右侧侧边栏在左侧显示
+    // sidebar: { 
+    //   "/Linux/": set_sidebar("/Linux/"),
+    //   "/CloudNative/k8s/": set_sidebar("CloudNative/k8s/")
+    // },
+    
+    sidebar: false, // 关闭侧边栏
+    aside: "left", // 设置右侧侧边栏在左侧显示
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/opfelix' }

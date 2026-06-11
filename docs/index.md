@@ -11,8 +11,8 @@ hero:
       text: Linux
       link: /Linux/0.目录.md
     - theme: alt
-      text: Tools
-      link: /Tools
+      text: CloudNative
+      link: /CloudNative/目录.md
 
 features:
   - title: 努力
