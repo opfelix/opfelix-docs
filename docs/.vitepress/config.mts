@@ -22,14 +22,14 @@ export default defineConfig({
       {
         text: 'Linux',
         items: [
-          { text: '文件系统操作', link: '../Linux/1.文件系统操作.md' },
-          { text: '用户组及权限', link: '../Linux/2.用户组及权限.md' },
+          { text: '文件系统操作', link: '/Linux/1.文件系统操作.md' },
+          { text: '用户组及权限', link: '/Linux/2.用户组及权限.md' },
         ]
       },
       {
         text: 'CloudNative',
         items: [
-          { text: 'k8s', link: '../CloudNative/k8s/k8s.md' },
+          { text: 'k8s', link: '/CloudNative/k8s/k8s.md' },
         ]
       },
       { text: '博客', link: 'https://www.cnblogs.com/opfelix' },
@@ -39,7 +39,7 @@ export default defineConfig({
     //   "/Linux/": set_sidebar("/Linux/"),
     //   "/CloudNative/k8s/": set_sidebar("CloudNative/k8s/")
     // },
-    
+
     sidebar: false, // 关闭侧边栏
     aside: "left", // 设置右侧侧边栏在左侧显示
 
