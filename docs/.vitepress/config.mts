@@ -6,7 +6,7 @@ export default defineConfig({
   lastUpdated: true,
   base: "/",
   title: "Opfelix",
-  head: [['link', { rel: 'icon', href: '/images/icon/site-icon/小猫抓.ico' }]],
+  head: [['link', { rel: 'icon', href: '/site-icon/小猫抓.ico' }]],
   description: "Opfelix",
 
   themeConfig: {
@@ -35,7 +35,7 @@ export default defineConfig({
       {
         text: 'SQL',
         items: [
-          { text: 'SQL', link: ' /docs/SQL/0目录.md' },
+          { text: 'SQL', link: '/docs/SQL/0.目录.md' },
         ]
       },
       { text: '博客', link: 'https://www.cnblogs.com/opfelix' },
