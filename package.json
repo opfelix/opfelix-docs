@@ -5,6 +5,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.17"
+    "vitepress": "^2.0.0-alpha.20"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "fsevents@2.3.3": true
   }
 }
