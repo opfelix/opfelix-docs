@@ -6,7 +6,7 @@ export default defineConfig({
   lastUpdated: true,
   base: "/",
   title: "Opfelix",
-  head: [['link', { rel: 'icon', href: '../images/icon/site-icon/小猫抓.ico' }]],
+  head: [['link', { rel: 'icon', href: '/images/icon/site-icon/小猫抓.ico' }]],
   description: "Opfelix",
 
   themeConfig: {
