@@ -30,6 +30,8 @@ export default defineConfig({
         text: 'CloudNative',
         items: [
           { text: 'k8s', link: '/docs/CloudNative/k8s/k8s.md' },
+          { text: '负载均衡', link: '/docs/负载均衡/负载均衡目录.md' },
+          { text: 'Ansible', link: '/docs/ansible自动化/ansible基础.md' },
         ]
       },
       {
